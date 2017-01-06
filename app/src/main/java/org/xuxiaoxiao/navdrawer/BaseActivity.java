@@ -39,6 +39,8 @@ public abstract class BaseActivity extends AppCompatActivity{
             public void onClick(View v) {
                 startActivity(new Intent(BaseActivity.this,InboxActivity.class));
                 finish();
+                drawerLayout.closeDrawer(Gravity.LEFT);
+
             }
         });
 
@@ -47,6 +49,8 @@ public abstract class BaseActivity extends AppCompatActivity{
             public void onClick(View v) {
                 startActivity(new Intent(BaseActivity.this,AddressBookActivity.class));
                 finish();
+                drawerLayout.closeDrawer(Gravity.LEFT);
+
             }
         });
 
@@ -54,6 +58,8 @@ public abstract class BaseActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Toast.makeText(BaseActivity.this,"You are now logged out!",Toast.LENGTH_SHORT).show();
+                drawerLayout.closeDrawer(Gravity.LEFT);
+
             }
         });
     }
