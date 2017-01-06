@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/drawer_layout">
+
+        <item android:title="Hide me!"
+            app:showAsAction="always"/>
+        <item android:title="Hide me too"
+            app:showAsAction="never"/>
+    </group>
+
+</menu>
